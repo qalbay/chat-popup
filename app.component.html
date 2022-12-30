@@ -1,0 +1,39 @@
+<div class="chat-poup">
+  <div class="chat-head">
+    <div class="d-flex align-items-center">
+      <img
+        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="profile-img me-2">
+      <div>
+        <div class="username">John Smith</div>
+        <div class="active">Active 30 m ago</div>
+      </div>
+    </div>
+    <button class="close-icon">X</button>
+  </div>
+  <div class="conversation">
+    <div class="messages-received" *ngFor="let msg of [1,2,3]">
+      <img
+        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="profile-img me-2">
+      <div class="text-received">
+        Hi! I wanted to enquire regarding the vet. My dog is not well.
+      </div>
+    </div>
+    <div class="messages-sent" *ngFor="let msg of [1,2,3]">
+      <div class="text-sent">
+        Thankyou for messaging us. We will be back to you soon.
+      </div>
+      <img
+        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        class="profile-img ms-2">
+    </div>
+  </div>
+  <div class="chat-footer">
+    <div class="d-flex align-items-center">
+      <button>img</button>
+      <input class="form-control custom mx-1" placeholder="Type a message">
+      <button>send</button>
+    </div>
+  </div>
+</div>
